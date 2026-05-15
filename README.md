@@ -1,5 +1,3 @@
-# BeTalent-Payments-API
-Painel de testes da API
 # 💳 BeTalent Payments API
 
 API **multi-gateway de pagamentos** desenvolvida como teste técnico backend.

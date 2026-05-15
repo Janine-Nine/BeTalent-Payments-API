@@ -1,0 +1,96 @@
+{
+  "compilerOptions": {
+
+    /* ========================
+       LINGUAGEM
+    ======================== */
+    "target": "ES2020",
+    "module": "commonjs",
+    "lib": ["ES2020"],
+
+    /* ========================
+       NODE
+    ======================== */
+    "moduleResolution": "node",
+    "types": ["node"],
+    "resolveJsonModule": true,
+
+    /* ========================
+       ESTRUTURA
+    ======================== */
+    "rootDir": ".",
+    "outDir": "./dist",
+    "baseUrl": ".",
+
+    /* ========================
+       PATH ALIASES
+    ======================== */
+    "paths": {
+      "@/*": ["*"],
+      "@controllers/*": ["controllers/*"],
+      "@routes/*": ["routes/*"],
+      "@services/*": ["services/*"],
+      "@repositories/*": ["repositories/*"],
+      "@usecases/*": ["useCases/*"],
+      "@middlewares/*": ["middleware/*"],
+      "@models/*": ["models/*"],
+      "@config/*": ["application/config/*"],
+      "@infra/*": ["infra/*"],
+      "@cache/*": ["application/cache/*"]
+    },
+
+    /* ========================
+       COMPATIBILIDADE
+    ======================== */
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+
+    /* ========================
+       QUALIDADE
+    ======================== */
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+
+    /* ========================
+       DEBUG
+    ======================== */
+    "sourceMap": true,
+
+    /* ========================
+       DECORATORS (caso use DI)
+    ======================== */
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+
+  "include": [
+    "src/**/*",
+    "routes/**/*",
+    "controllers/**/*",
+    "services/**/*",
+    "repositories/**/*",
+    "middleware/**/*",
+    "application/config/**/*",
+    "application/database/database.ts",
+    "config/**/*",
+    "database/**/*"
+  ],
+
+  "exclude": [
+    "node_modules",
+    "dist",
+    "coverage",
+    "tests",
+    "App",
+    "cliente",
+    "transactions",
+    "useCases",
+    "domain",
+    "gateways",
+    "logger",
+    "routes/routes.ts",
+    "services/RefundService.ts",
+    "application/database/connection.ts"
+  ]
+}

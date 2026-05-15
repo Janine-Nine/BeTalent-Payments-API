@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BeTalent Payments API</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>💳 BeTalent Payments API</h1>
+  <p>Painel de testes da API</p>
+</header>
+
+<main class="container">
+
+  <section class="card">
+    <h2>Status da API</h2>
+    <button type="button" onclick="checkApi()">Verificar status</button>
+    <pre id="status">Clique em "Verificar status" para testar a API.</pre>
+  </section>
+
+  <section class="card">
+    <h2>Login</h2>
+    <div class="field">
+      <label for="email">Email</label>
+      <input id="email" type="email" placeholder="admin@betalents.com">
+    </div>
+    <div class="field">
+      <label for="password">Senha</label>
+      <input id="password" type="password" placeholder="1234">
+    </div>
+    <button type="button" onclick="login()">Login</button>
+    <div class="hint">Use <strong>admin@betalents.com</strong> / <strong>1234</strong> para teste</div>
+    <pre id="loginResponse"></pre>
+  </section>
+
+  <section class="card">
+    <h2>Produtos</h2>
+    <button type="button" onclick="listarProdutos()">Listar produtos</button>
+    <pre id="produtos">Clique em "Listar produtos" para carregar o catálogo.</pre>
+  </section>
+
+  <section class="card">
+    <h2>Compra</h2>
+    <div class="field">
+      <label for="produtoId">ID do produto</label>
+      <input id="produtoId" type="number" placeholder="1">
+    </div>
+    <div class="field">
+      <label for="quantity">Quantidade</label>
+      <input id="quantity" type="number" placeholder="1">
+    </div>
+    <button type="button" onclick="comprar()">Comprar</button>
+    <pre id="purchaseResponse"></pre>
+  </section>
+
+</main>
+
+<footer>
+  <p>Projeto Backend — Teste Técnico BeTalent - by Janine Cunha</p>
+</footer>
+
+<script src="../js/script.js"></script>
+
+</body>
+</html>
